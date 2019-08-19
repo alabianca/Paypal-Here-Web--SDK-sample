@@ -1,0 +1,8 @@
+<ul class="list-group">
+    <app-item *ngFor="let item of myCart"
+     [name]='item.name' 
+     [quantity]='item.quantity' 
+     (update)="cart($event, item)"></app-item>
+</ul>
+<h4>Total: ${{getTotal()}}</h4>
+<button class="btn btn-primary" [disabled]="!access_token" (click)="buy()">Buy</button>

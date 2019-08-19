@@ -1,0 +1,12 @@
+<li class="list-group-item">
+    <div style="display: flex; justify-content: space-between;">
+        <div>
+            <span>{{name}}</span>
+            <span class="badge badge-primary" *ngIf="quantity > 0">{{quantity}}</span>
+        </div>
+        <div>
+            <button (click)="_update(true)" style="padding: 0 5 0 5" class="btn btn-primary">Add</button>
+            <button (click)="_update(false)" style="padding: 0 5 0 5" class="btn btn-danger">Remove</button>
+        </div>
+    </div>
+</li>

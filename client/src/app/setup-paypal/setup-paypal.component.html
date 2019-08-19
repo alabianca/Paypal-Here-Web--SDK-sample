@@ -1,0 +1,15 @@
+<!-- <a 
+    href="https://www.sandbox.paypal.com/signin/authorize?scope=openid https://uri.paypal.com/services/paypalattributes/business https://uri.paypal.com/services/paypalhere address email profile&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Foauth%2Fredirect&client_id=AQJ0aKVRNaWwuJH_dsa4Szc_0wu8L_0yXO0dR2rX3Z09hnuVl-IVKQsfDLMuFa7ytpiS_USJq4saCXmt"
+    >Do paypal fun</a> -->
+<a *ngIf="!token" [href]="paypalLoginURL">Paypal login</a>
+<div *ngIf="token">
+    <p>Logged in with Paypal (Token): </p><code>{{token}}</code>
+    <h6>Connecting to mediator app...</h6>
+    <button (click)="connect()">Connect to mediator</button>
+    <button (click)="statusCheck()">Status Check</button>
+    <span>Status: {{status}}</span>
+</div>
+<div *ngIf="payPalSetupDone">
+    <p>Paypal setup done! You can now sell</p>
+</div>
+

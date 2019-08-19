@@ -1,0 +1,4 @@
+module.exports = {
+    CID: "AQJ0aKVRNaWwuJH_dsa4Szc_0wu8L_0yXO0dR2rX3Z09hnuVl-IVKQsfDLMuFa7ytpiS_USJq4saCXmt",
+    CLIENT_SECRET: "EHts_qtO0tvxFJ0ujZih9OxXwZGKc-VWQ3xCXSj_84GGc8GBsIi4GNVzj10iiJ0Rg8QHiJPgUS113UGL"
+}
